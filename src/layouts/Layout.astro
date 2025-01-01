@@ -1,0 +1,27 @@
+---
+import Header from "../components/Header.astro"
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image" href="/CSP_Logo.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Cancún SafePlace</title>
+	</head>
+	<body>
+		<Header />
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		background-color: #F4F1F8;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
