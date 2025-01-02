@@ -1,30 +1,34 @@
 ---
-// Si necesitas pasar props, puedes configurarlas aquí (opcional).
+import Image from "astro/components/Image.astro";
+import CancunBackG from "../../src/assets/CancunBackG.jpg";
 ---
-<header class="bg-gradient-to-r from-blue-900 to-green-500 text-white">
-  <!-- Navbar -->
-  <nav class="container mx-auto flex items-center justify-between py-4 px-6">
-    <!-- Logo o Título -->
-    <div class="text-2xl font-bold">
-      <a href="/">ZonaSegura</a>
-    </div>
-    <!-- Enlaces de Navegación -->
-    <div class="hidden md:flex space-x-6">
-      <a href="#zonas" class="hover:text-yellow-300">Zonas</a>
-      <a href="#informacion" class="hover:text-yellow-300">Información</a>
-      <a href="#colaborar" class="hover:text-yellow-300">Colaborar</a>
-    </div>
-    <!-- Botón Destacado -->
-    <a
-      href="#mapa"
-      class="bg-yellow-400 text-black py-2 px-4 rounded-lg shadow-md hover:bg-yellow-500 transition"
-    >
-      Explorar
-    </a>
-  </nav>
-
-  <!-- Hero Banner -->
-  <div class="container mx-auto text-center py-16 px-6">
+<header class="relative text-white bg-cover bg-center">
+    <Image
+    src={CancunBackG}
+    alt="Atardever en Cancún"
+    width="1280"
+    height="720"
+    loading="lazy"
+    class="absolute inset-0 h-full w-full object-cover z-0 blur-sm"
+    />
+    <div class="absolute inset-0  bg-gradient-to-r from-blue-900 to-green-500 opacity-50 z-0"></div>
+        <nav class="relative z-20 container mx-auto flex items-center justify-between py-4 px-6">
+            <div class="text-2xl font-bold">
+                <a href="/">Cancún SafePlace</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#zonas" class="hover:text-yellow-300">Zonas</a>
+                <a href="#informacion" class="hover:text-yellow-300">Información</a>
+                <a href="#colaborar" class="hover:text-yellow-300">Contáctanos</a>
+            </div>
+                <a
+                    href="#mapa"
+                    class="bg-yellow-400 text-black py-2 px-4 rounded-lg shadow-md hover:bg-yellow-500 transition"
+                    >
+                    Explorar
+                </a>
+        </nav>
+  <div class="relative container mx-auto text-center py-16 px-6">
     <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
       Descubre las Zonas Más Seguras
     </h1>
@@ -33,7 +37,7 @@
     </p>
     <a
       href="#mapa"
-      class="bg-green-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-green-600 transition text-lg"
+      class="bg-green-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-green-700 transition text-lg"
     >
       Explorar Mapa
     </a>
