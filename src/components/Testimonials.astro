@@ -1,0 +1,129 @@
+---
+import Image from "astro/components/Image.astro";
+import Testimonial1 from "../../src/assets/Testimonial1.jpg";
+import Testimonial2 from "../../src/assets/Testimonial2.png";
+import Testimonial3 from "../../src/assets/Testimonial3.jpg";
+import Testimonial4 from "../../src/assets/Testimonial4.jpg";
+---
+
+<section class="text-center">
+  <h2 class="text-3xl font-semibold mb-6">Lo que dicen nuestros usuarios</h2>
+  <div
+    class="grid m-4 border border-gray-200 rounded-lg shadow-sm md:mb-12 md:grid-cols-2 bg-white"
+  >
+    <figure
+      class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e"
+    >
+      <blockquote
+        class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+      >
+        <p class="my-4">
+          "Gracias a SafePlace, ahora me siento más seguro al viajar."
+        </p>
+      </blockquote>
+      <figcaption class="flex items-center justify-center">
+        <Image
+          src={Testimonial1}
+          alt="PedroDE"
+          width="1280"
+          height="720"
+          loading="lazy"
+          class="rounded-full w-9 h-9"
+        />
+        <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
+          <div>Pedro Dorantes Ek</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">
+            Residente de la ciudad
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+
+    <figure
+      class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg"
+    >
+      <blockquote
+        class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+      >
+        <p class="my-4">
+          "Información confiable que realmente hace la diferencia."
+        </p>
+      </blockquote>
+      <figcaption class="flex items-center justify-center">
+        <Image
+          src={Testimonial2}
+          alt="GonzaloCH"
+          width="1280"
+          height="720"
+          loading="lazy"
+          class="rounded-full w-9 h-9"
+        />
+        <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
+          <div>Gonzalo Chale</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">
+            Residente de la ciudad
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+    <figure
+      class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e"
+    >
+      <blockquote
+        class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+      >
+        <p class="my-4">
+          "Excelente herramienta para explorar Cancún sin preocupaciones."
+        </p>
+      </blockquote>
+      <figcaption class="flex items-center justify-center">
+        <Image
+          src={Testimonial3}
+          alt="Yadiss"
+          width="1280"
+          height="720"
+          loading="lazy"
+          class="rounded-full w-9 h-9"
+        />
+        <div
+          class="space-y-0.5 font-medium text-left rtl:text-right ms-3"
+        >
+          <div>Yadira Salazar</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">
+            Turista de Mexicali
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+    <figure
+      class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg"
+    >
+      <blockquote
+        class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+      >
+        <p class="my-4">
+          "planificar mis actividades ha sido mucho más sencillo Desde que
+          descubrí Cancún SafePlace"
+        </p>
+      </blockquote>
+      <figcaption class="flex items-center justify-center">
+        <Image
+          src={Testimonial4}
+          alt="Grupo"
+          width="1280"
+          height="720"
+          loading="lazy"
+          class="rounded-full w-9 h-9"
+        />
+        <div
+          class="space-y-0.5 font-medium text-left rtl:text-right ms-3"
+        >
+          <div>Elena Jimenez</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">
+            Turista de CDMX
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
