@@ -1,0 +1,21 @@
+---
+export interface Props {
+    title: string;
+    btn:string;
+}
+const { title, btn } = Astro.props;
+---
+
+<section
+  class="py-12 bg-gradient-to-r from-green-500 to-blue-500 text-white text-center"
+>
+  <h2 class="text-3xl font-bold mb-4">
+    {title}
+  </h2>
+  <a
+    href="#mapa"
+    class="bg-yellow-400 text-black py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-500 hover:text-white transition"
+  >
+  {btn}
+  </a>
+</section>

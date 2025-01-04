@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Features from "../components/Features.astro";
 import Testimonials from "../components/Testimonials.astro";
+import Calltoaction from "../components/Calltoaction.astro";
+import Form from "../components/Form.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -9,5 +11,10 @@ import Testimonials from "../components/Testimonials.astro";
 
 <Layout>
   <Features />
-  <Testimonials/>
+  <Testimonials />
+  <Calltoaction
+    title="¡Explora Cancún de forma segura ahora!"
+    btn="Explorar el Mapa"
+  />
+  <Form />
 </Layout>
