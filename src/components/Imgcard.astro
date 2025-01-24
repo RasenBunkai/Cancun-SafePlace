@@ -5,31 +5,28 @@ export interface Props {
   title: string;
   description: string;
   href: string;
+  loading: "lazy" | "eager";
 }
-const { img, title, description, href } = Astro.props;
+const { img, title, description, href, loading } = Astro.props;
 ---
-
 <div class="max-w-sm m-7 bg-white border border-gray-200 rounded-lg shadow">
-  <a>
-    <Image
-      class="rounded-t-lg w-full h-48 object-cover"
-      src={img}
-      alt="CardImg"
-      width={640}
-      height={360}
-    />
-  </a>
+  <Image
+    class="rounded-t-lg w-full h-48 object-cover"
+    src={img}
+    alt="CardImg"
+    width={640}
+    height={360}
+    loading={loading}
+  />
   <div class="p-5">
-    <a>
-      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
-        {title}
-      </h5>
-    </a>
+    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+      {title}
+    </h5>
     <p class="mb-3 font-normal text-gray-700">
-        {description}
+      {description}
     </p>
     <a
-      href="/"
+      href={href}
       class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-yellow-400 rounded-lg hover:bg-yellow-500 focus:ring-1 focus:outline-none focus:ring-amber-700"
     >
       Ver más
