@@ -1,0 +1,118 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import RasenBunkai from "../assets/RasenBunkai.jpeg";
+---
+
+<Layout>
+    <section class="py-12">
+        <div class="container mx-auto px-6 lg:px-20">
+            <!-- Encabezado -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold text-gray-900">
+                    ¿Quiénes somos?
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    El equipo detrás de Cancún SafePlace, comprometido con tu
+                    tranquilidad y seguridad.
+                </p>
+            </div>
+            <!-- Nuestra historia -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-800">
+                    Nuestra historia
+                </h3>
+                <p class="mt-4 text-gray-600">
+                    Cancún SafePlace nació con la misión de brindar a turistas y
+                    residentes de Cancún una herramienta confiable para
+                    descubrir las zonas más seguras de la ciudad. Inspirados por
+                    la importancia de disfrutar Cancún con tranquilidad, nuestro
+                    objetivo es empoderar a los usuarios con información
+                    confiable y actualizada.
+                </p>
+            </div>
+            <!-- Misión y Visión -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Nuestra Misión
+                    </h3>
+                    <p class="mt-2 text-gray-600">
+                        Facilitar el acceso a información de seguridad en Cancún
+                        para garantizar una experiencia más tranquila para
+                        todos.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Nuestra Visión
+                    </h3>
+                    <p class="mt-2 text-gray-600">
+                        Ser la principal referencia de seguridad en Cancún,
+                        ayudando a construir una comunidad más conectada, segura
+                        e informada.
+                    </p>
+                </div>
+            </div>
+            <!-- Nuestros valores -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-800">
+                    Nuestros valores
+                </h3>
+                <ul class="mt-4 space-y-2">
+                    <li class="flex items-center">
+                        <span class="w-4 h-4 bg-green-500 rounded-full mr-2"
+                        ></span>
+                        <span class="text-gray-600">Transparencia</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-4 h-4 bg-green-500 rounded-full mr-2"
+                        ></span>
+                        <span class="text-gray-600"
+                            >Compromiso con la comunidad</span
+                        >
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-4 h-4 bg-green-500 rounded-full mr-2"
+                        ></span>
+                        <span class="text-gray-600">Innovación</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Impacto del proyecto -->
+            <div class="my-12">
+                <h3 class="text-2xl font-bold text-gray-800">
+                    Impacto del proyecto
+                </h3>
+                <p class="mt-4 text-gray-600">
+                    Más de 1000 usuarios confían en Cancún SafePlace para
+                    planificar sus actividades con tranquilidad. Hemos
+                    registrado decenas de zonas seguras y seguimos creciendo.
+                </p>
+            </div>
+
+            <!-- El equipo -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-800">Nuestro equipo</h3>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 mt-6"
+                >
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <Image
+                            src={RasenBunkai}
+                            alt="Developer"
+                            width={1007}
+                            height={1007}
+                            loading="lazy"
+                            class="w-28 h-28 mx-auto rounded-full"
+                        />
+                        <h4 class="mt-4 text-lg font-bold text-gray-800">
+                            Emiliano Salgado Martínez
+                        </h4>
+                        <p class="text-gray-600">Desarrollador Web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
