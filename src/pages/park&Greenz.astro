@@ -1,0 +1,49 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Imgcard from "../components/Imgcard.astro";
+import OmbligoVerde from "../assets/parques/OmbligoVerde.jpg";
+import ParqueCancun from "../assets/parques/ParqueCancun.jpg";
+import ParqueKabah from "../assets/parques/ParqueKabah.jpeg";
+import ParquePalapas from "../assets/parques/ParquePalapas.jpg";
+---
+
+<Layout title="Parques y áreas verdes">
+    <h1 class="mt-3 text-4xl font-semibold text-center text-gray-900">
+        Parques y áreas verdes
+    </h1>
+    <p></p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <Imgcard
+            img={OmbligoVerde.src}
+            title="Reserva Ecológica Ombligo Verde"
+            description="La primera zona de preservación ecológica municipal, se promueve como una perspectiva al rescate de los espacios públicos, con un concepto apegado a salvaguardar un pulmón verde en el corazón de la ciudad."
+            href="https://www.google.com/maps/place/Reserva+Ecol%C3%B3gica+Ombligo+Verde/@21.1586993,-86.8451722,17z/data=!3m1!4b1!4m6!3m5!1s0x8f4c2b8ab0d43e45:0xc49c9c1950ccfdaf!8m2!3d21.1586993!4d-86.8425973!16s%2Fg%2F11cnwhg11w?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
+            btnText="Cómo llegar"
+            loading="eager"
+        />
+        <Imgcard
+            img={ParqueCancun.src}
+            title="Parque Cancún"
+            description="Parque Cancún un espacio público que fomenta la integración social, el sentido de pertenencia y la conservación de la naturaleza a través de la recreación y la educación. Se encuentra ubicado dentro del Área de Protección de Flora y Fauna Manglares de Nichupté, es un Área Natural Protegida Federal."
+            href="https://www.google.com.mx/maps/place/Parque+Canc%C3%BAn/@21.1173166,-86.8317421,17z/data=!4m6!3m5!1s0x8f4c2bdfed3495f5:0x6af75ad3edf4c833!8m2!3d21.1177169!4d-86.8302186!16s%2Fg%2F11jwwp2r14?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
+            btnText="Cómo llegar"
+            loading="eager"
+        />
+        <Imgcard
+            img={ParqueKabah.src}
+            title="Parque Kabah"
+            description="El Parque Ecológico Estatal Kabah es considerado uno de los pulmones de la ciudad y es de vital importancia para la conservación de la biodiversidad local.El parque es visitado por muchos turistas en busca de aventuras de naturaleza, ideal para caminar, para explorar la fauna y flora de la región."
+            href="https://www.google.com/maps/place/Parque+Ecol%C3%B3gico+Kabah/@21.1433237,-86.8408394,17z/data=!3m1!4b1!4m6!3m5!1s0x8f4c2bec530e4a2b:0xaa65815023f87f9f!8m2!3d21.1433237!4d-86.8382645!16s%2Fg%2F1th0chjm?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
+            btnText="Cómo llegar"
+            loading="eager"
+        />
+        <Imgcard
+            img={ParquePalapas.src}
+            title="Parque de las palapas"
+            description="Parque de las Palapas es la pequeña Alameda de Cancún, ubicado en el corazón de la ciudad, donde puedes salir a caminar, comer antojitos mexicanos comprar una nieve o un refresco para aliviar el calor, consentirse con una que otra botana típica, adquirir artesanías hippies y ver algún show público de mimos o grupos musicales y en algunas ocasiones hay espectáculos culturales y recreativos."
+            href="https://www.google.com/maps/place/Parque+de+las+Palapas/@21.1611456,-86.8321016,17z/data=!3m1!4b1!4m6!3m5!1s0x8f4c2c0737a9f0ab:0x1a0a54df0bd2c1b9!8m2!3d21.1611457!4d-86.8274882!16s%2Fg%2F11dfqt6xl3?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
+            btnText="Cómo llegar"
+            loading="eager"
+        />
+    </div>
+</Layout>

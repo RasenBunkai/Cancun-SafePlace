@@ -9,7 +9,7 @@ import Footer from "../components/Footer.astro"
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image" href="/CSP_Logo.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Cancún SafePlace</title>
+		<title>{Astro.props.title ? `Cancún SafePlace | ${Astro.props.title}` : 'Cancún SafePlace'}</title>
 	</head>
 	<body>
 		<Header />

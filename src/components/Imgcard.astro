@@ -5,8 +5,9 @@ export interface Props {
   description: string;
   href: string;
   loading: "lazy" | "eager";
+  btnText: string;
 }
-const { img, title, description, href, loading } = Astro.props;
+const { img, title, description, href, loading, btnText} = Astro.props;
 ---
 <div class="max-w-sm m-7 bg-white border border-gray-200 rounded-lg shadow">
   <img
@@ -28,7 +29,7 @@ const { img, title, description, href, loading } = Astro.props;
       href={href}
       class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-yellow-400 rounded-lg hover:bg-yellow-500 focus:ring-1 focus:outline-none focus:ring-amber-700"
     >
-      Ver más
+      {btnText}
       <svg
         class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
         aria-hidden="true"
