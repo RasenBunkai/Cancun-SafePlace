@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Imgcard from "../components/Imgcard.astro";
+import Amercias from "../assets/plazas/Americas.png";
+import Outlet from "../assets/plazas/Outlet.jpg";
+---
+
+<Layout title="Parques y áreas verdes">
+    <h1 class="mt-3 text-4xl font-semibold text-center text-gray-900">
+        Plazas y espacios públicos
+    </h1>
+    <p></p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <Imgcard
+            img={Amercias.src}
+            title="Plaza las americas"
+            description="Inaugurada en 2005, es el centro comercial más grande de Cancún.Ahora incluye las torres residenciales Torres de las Américas encima de una segunda zona comercial Malecón Américas. El centro comercial cuenta con tiendas departamentales, tiendas de ropa, restaurantes, cines, entre otros servicios"
+            href="https://www.google.com/maps/place/Plaza+Las+Am%C3%A9ricas/@21.1467939,-86.8254685,17z/data=!3m1!4b1!4m6!3m5!1s0x8f4c2bfe37e860b3:0x542924d7054fb104!8m2!3d21.1467939!4d-86.8228936!16s%2Fg%2F1tg6lm03?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+            btnText="Cómo llegar"
+            loading="eager"
+        />
+        <Imgcard
+            img={Outlet.src}
+            title="Plaza Outlet"
+            description="Antes de que la ciudad se conociera como Cancún se llamaba Ekab, que significa Tierra negra. Las Plazas Outlet ofrece varias tiendas de marcas reconocidas con atractivos descuentos, lo que lo hace uno de los mejores centros comerciales en Cancún para conseguir buenos precios."
+            href="https://www.google.com/maps/place/Las+Plazas+Outlet+Canc%C3%BAn/@21.1517887,-86.8509921,17z/data=!4m6!3m5!1s0x8f4c2b47d3115e8f:0xab7984da5fe5fbbb!8m2!3d21.1517887!4d-86.8484192!16s%2Fg%2F1hdyydht6?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+            btnText="Cómo llegar"
+            loading="eager"
+        />
+        <Imgcard
+            img={Outlet.src}
+            title="Parque Kabah"
+            description="El Parque Ecológico Estatal Kabah es considerado uno de los pulmones de la ciudad y es de vital importancia para la conservación de la biodiversidad local.El parque es visitado por muchos turistas en busca de aventuras de naturaleza, ideal para caminar, para explorar la fauna y flora de la región."
+            href="https://www.google.com/maps/place/Parque+Ecol%C3%B3gico+Kabah/@21.1433237,-86.8408394,17z/data=!3m1!4b1!4m6!3m5!1s0x8f4c2bec530e4a2b:0xaa65815023f87f9f!8m2!3d21.1433237!4d-86.8382645!16s%2Fg%2F1th0chjm?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
+            btnText="Cómo llegar"
+            loading="eager"
+        />
+        <Imgcard
+            img={Outlet.src}
+            title="Parque de las palapas"
+            description="Parque de las Palapas es la pequeña Alameda de Cancún, ubicado en el corazón de la ciudad, donde puedes salir a caminar, comer antojitos mexicanos comprar una nieve o un refresco para aliviar el calor, consentirse con una que otra botana típica, adquirir artesanías hippies y ver algún show público de mimos o grupos musicales y en algunas ocasiones hay espectáculos culturales y recreativos."
+            href="https://www.google.com/maps/place/Parque+de+las+Palapas/@21.1611456,-86.8321016,17z/data=!3m1!4b1!4m6!3m5!1s0x8f4c2c0737a9f0ab:0x1a0a54df0bd2c1b9!8m2!3d21.1611457!4d-86.8274882!16s%2Fg%2F11dfqt6xl3?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
+            btnText="Cómo llegar"
+            loading="eager"
+        />
+    </div>
+</Layout>
