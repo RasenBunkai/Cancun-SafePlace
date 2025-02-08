@@ -1,6 +1,9 @@
 ---
 import Image from "astro/components/Image.astro";
 import CancunBackG from "../../src/assets/CancunBackG.jpg";
+import Map from "./svg/Map.astro";
+import Us from "./svg/Us.astro";
+import Zones from "./svg/Zones.astro";
 ---
 
 <header class="relative text-white bg-cover bg-center">
@@ -13,28 +16,24 @@ import CancunBackG from "../../src/assets/CancunBackG.jpg";
     loading="eager"
   />
   <div
-    class="absolute inset-0 bg-gradient-to-r from-blue-900 to-green-500 opacity-50 z-0"
-  >
+    class="absolute inset-0 bg-gradient-to-r from-blue-900 to-green-500 opacity-50 z-0">
   </div>
   <nav
-    class="relative z-20 container mx-auto flex items-center justify-between py-4 px-6"
-  >
+    class="relative z-20 container mx-auto flex items-center justify-between py-4 px-6">
     <div class="text-2xl font-bold">
       <a href="/">Cancún SafePlace</a>
     </div>
     <button
       id="menu-button"
       class="md:hidden text-white focus:outline-none focus:bg-green-500 focus:rounded-md"
-      aria-label="Abrir menú de navegación"
-    >
+      aria-label="Abrir menú de navegación">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-6"
-      >
+        class="size-6">
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -44,11 +43,10 @@ import CancunBackG from "../../src/assets/CancunBackG.jpg";
     {/* Menú de navegación */}
     <div
       id="menu"
-      class="absolute md:static top-16 right-6 md:flex gap-7 bg-slate-400 md:bg-transparent rounded-lg shadow-lg md:shadow-none p-4 md:p-0 transition-all duration-300 hidden"
-    >
-      <a href="zonas" class="block md:inline hover:text-yellow-300">Zonas</a>
-      <a href="mapa" class="block md:inline hover:text-yellow-300">Mapa</a>
-      <a href="nosotros" class="block md:inline hover:text-yellow-300">Nosotros</a>
+      class="absolute md:static top-16 right-6 md:flex gap-7 bg-slate-400 md:bg-transparent rounded-lg shadow-lg md:shadow-none p-4 md:p-0 transition-all duration-300 hidden">
+      <a href="zonas" class="flex hover:text-yellow-300"><Zones />Zonas</a>
+      <a href="mapa" class="flex hover:text-yellow-300"><Map />Mapa</a>
+      <a href="nosotros" class="flex hover:text-yellow-300"><Us />Nosotros</a>
     </div>
   </nav>
   <div class="relative container mx-auto text-center py-16 px-6">
@@ -58,7 +56,6 @@ import CancunBackG from "../../src/assets/CancunBackG.jpg";
     <p class="text-lg md:text-xl mb-8">
       Información confiable para tu seguridad y tranquilidad en Cancún.
     </p>
-
   </div>
 </header>
 
