@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Imgcard from "../components/Imgcard.astro";
+import ElRey from "../assets/turismo/ElRey.jpg";
+import Malecon from "../assets/turismo/Malecon.jpg";
+import SkyWheel from "../assets/turismo/SkyWheel.jpg";
+import MuseoMaya from "../assets/turismo/MuseoMaya.jpg";
+---
+
+<Layout title="Atractivos turísticos">
+  <h1 class="mt-3 text-4xl font-semibold text-center text-gray-900">
+    Atractivos turísticos
+  </h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <Imgcard
+      img={ElRey.src}
+      title="Zona Arqueológica de El Rey"
+      description="El Rey es una de las zonas arqueológicas más importantes de la isla Cancún. De acuerdo con las investigaciones, se cree que El Rey, junto con el cercano San Miguelito, conformaba el área nuclear de un poblado dedicado al comercio marítimo y a las actividades pesqueras."
+      href="https://maps.app.goo.gl/kDHQ88hVYinLVhTm8"
+      btnText="Cómo llegar"
+      loading="eager"
+    />
+    <Imgcard
+      img={Malecon.src}
+      title="Malecon Tajamar"
+      description="Ideal para caminar, correr, andar en bici y/o patines. Cuenta con una vista hermosa al mar y a la laguna. Es un lugar tranquilo y seguro para disfrutar de la naturaleza y el aire libre."
+      href="https://maps.app.goo.gl/yn3NrhdTBbjNiiWr5"
+      btnText="Cómo llegar"
+      loading="eager"
+    />
+    <Imgcard
+      img={SkyWheel.src}
+      title="Skywheel Cancun"
+      description="Paseo costero elegante, con una gran rueda de la fortuna, terrazas de restaurantes y boutiques. Es un lugar ideal para disfrutar de la vista al mar y la brisa marina."
+      href="https://maps.app.goo.gl/PVEzYwC5d221KqcC9"
+      btnText="Cómo llegar"
+      loading="eager"
+    />
+    <Imgcard
+      img={MuseoMaya.src}
+      title="Museo Maya de Cancún"
+      description="El Museo Maya de Cancún es un espacio de exhibición destinado a la cultura maya que se encuentra en el kilómetro 16.5 del Bulevar Kukulcán, en la Zona Hotelera de Cancún. Es un lugar ideal para aprender más sobre la historia y la cultura de la civilización maya."
+      href="https://maps.app.goo.gl/JN5yHasXiZZ7wLsT8"
+      btnText="Cómo llegar"
+      loading="eager"
+    />
+  </div>
+</Layout>

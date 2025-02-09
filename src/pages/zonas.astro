@@ -3,14 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import Imgcard from "../components/Imgcard.astro";
 import Playas from "../assets/Playas.jpg";
 import Atractivos from "../assets/Atractivos.jpg";
-import Restaurantes from "../assets/Restaurantes.png";
 import Plaza_Americas from "../assets/Plaza_Americas.png";
 import ParqueK from "../assets/ParqueK.jpeg";
 ---
 
 <Layout title="Zonas">
   <h1 class="mt-3 text-4xl font-semibold text-center text-gray-900">Zonas</h1>
-  <div class="grid g-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     <Imgcard
       img={ParqueK.src}
       title="Parques y áreas verdes"
@@ -28,18 +27,10 @@ import ParqueK from "../assets/ParqueK.jpeg";
       loading="eager"
     />
     <Imgcard
-      img={Restaurantes.src}
-      title="Restaurantes y bares"
-      description="Los restaurantes y bares son lugares de ocio y entretenimiento. Son espacios donde las personas pueden disfrutar de una buena comida o bebida, socializar con amigos y familiares, y relajarse después de un día de trabajo."
-      href="/"
-      btnText="Ver más"
-      loading="eager"
-    />
-    <Imgcard
       img={Atractivos.src}
       title="Atractivos turísticos"
       description="Los atractivos turísticos son lugares de interés que atraen a visitantes de todo el mundo. Son espacios que ofrecen experiencias únicas y memorables, como monumentos históricos, parques naturales, museos y playas."
-      href="/"
+      href="/turism"
       btnText="Ver más"
       loading="lazy"
     />
