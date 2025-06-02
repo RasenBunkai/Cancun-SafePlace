@@ -4,122 +4,76 @@ import Testimonial1 from "../../src/assets/Testimonial1.jpg";
 import Testimonial2 from "../../src/assets/Testimonial2.png";
 import Testimonial3 from "../../src/assets/Testimonial3.png";
 import Testimonial4 from "../../src/assets/Testimonial4.jpg";
+
+const testimonials = [
+  {
+    testimonial:
+      "Planificar mis actividades ha sido mucho más sencillo Desde que descubrí Cancún SafePlace",
+    image: Testimonial1,
+    name: "Pedro D.",
+    local: "Cancunense",
+  },
+  {
+    testimonial:
+      "Excelente herramienta para explorar Cancún sin preocupaciones.",
+    image: Testimonial2,
+    name: "Abraham V.",
+    local: "Turista de Mérida",
+  },
+  {
+    testimonial:
+      "Información confiable y segura que realmente hace la diferencia.",
+    image: Testimonial3,
+    name: "Paola S.",
+    local: "Turista de CDMX",
+  },
+  {
+    testimonial: "Usando SafePlace me siento más seguro recorriendo la ciudad.",
+    image: Testimonial4,
+    name: "Iram S.",
+    local: "Cancunense",
+  },
+];
 ---
 
-<section class="text-center p-7">
-  <h2 class="text-3xl font-semibold mb-6">Lo que dicen nuestros usuarios</h2>
-  <div
-    class="grid m-4 border border-gray-200 rounded-lg shadow-sm md:mb-12 md:grid-cols-2 bg-white"
-  >
-    <figure
-      class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e"
-    >
-      <blockquote
-        class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
-      >
-        <p class="my-4">
-          "Gracias a SafePlace, ahora me siento más seguro al viajar."
-        </p>
-      </blockquote>
-      <figcaption class="flex items-center justify-center">
-        <Image
-          src={Testimonial1}
-          alt="PedroDE"
-          width="1280"
-          height="720"
-          loading="lazy"
-          class="rounded-full w-9 h-9"
-        />
-        <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
-          <div>Pedro Dorantes Ek</div>
-          <div class="text-sm text-gray-500 dark:text-gray-400">
-            Residente de la ciudad
-          </div>
-        </div>
-      </figcaption>
-    </figure>
+<section class="py-16 px-4 text-center">
+  <h2
+    class="text-4xl font-semibold leading-tight text-indigo-950 mb-2 text-center tracking-tighter text-pretty pointer-events-none">
+    Lo que nuestros usuarios dicen
+  </h2>
+  <p
+    class="text-gray-500 max-w-xl mx-auto mb-12 text-lg md:block leading-tight tracking-tighter text-pretty pointer-events-none">
+    Descubre cómo SafePlace ha ayudado a turistas y locales a disfrutar Cancún con mayor tranquilidad y confianza.
+  </p>
 
-    <figure
-      class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg"
-    >
-      <blockquote
-        class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
-      >
-        <p class="my-4">
-          "Información confiable que realmente hace la diferencia."
-        </p>
-      </blockquote>
-      <figcaption class="flex items-center justify-center">
-        <Image
-          src={Testimonial2}
-          alt="GonzaloCH"
-          width="1280"
-          height="720"
-          loading="lazy"
-          class="rounded-full w-9 h-9"
-        />
-        <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
-          <div>Gonzalo Chale</div>
-          <div class="text-sm text-gray-500 dark:text-gray-400">
-            Residente de la ciudad
+  <div
+    class="grid gap-6 lg:grid-cols-4 md:grid-cols-2 max-w-7xl container mx-auto px-14 pb-12 items-center">
+    {
+      testimonials.map(({testimonial, image, name, local}) => (
+        <div class="bg-white flex flex-col shadow-md rounded-lg p-6 text-left hover:scale-105 transition-transform duration-300">
+          <p class="text-gray-700 italic mb-6 text-md md:block leading-tight text-pretty pointer-events-none">
+            {testimonial}
+          </p>
+          <div class="flex items-center gap-4">
+            <Image
+              src={image}
+              alt={name}
+              width="64"
+              height="64"
+              draggable="false"
+              class="rounded-full w-12 h-12 object-cover"
+            />
+            <div>
+              <p class="font-semibold text-slate-900 mt-auto leading-tight tracking-tighter text-pretty pointer-events-none">
+                {name}
+              </p>
+              <p class="text-sm text-gray-500 mt-auto leading-tight text-pretty pointer-events-none">
+                {local}
+              </p>
+            </div>
           </div>
         </div>
-      </figcaption>
-    </figure>
-    <figure
-      class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e"
-    >
-      <blockquote
-        class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
-      >
-        <p class="my-4">
-          "Excelente herramienta para explorar Cancún sin preocupaciones."
-        </p>
-      </blockquote>
-      <figcaption class="flex items-center justify-center">
-        <Image
-          src={Testimonial3}
-          alt="Yadiss"
-          width="1280"
-          height="720"
-          loading="lazy"
-          class="rounded-full w-9 h-9"
-        />
-        <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
-          <div>Yadira Salazar</div>
-          <div class="text-sm text-gray-500 dark:text-gray-400">
-            Turista de Mexicali
-          </div>
-        </div>
-      </figcaption>
-    </figure>
-    <figure
-      class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg"
-    >
-      <blockquote
-        class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
-      >
-        <p class="my-4">
-          "planificar mis actividades ha sido mucho más sencillo Desde que
-          descubrí Cancún SafePlace"
-        </p>
-      </blockquote>
-      <figcaption class="flex items-center justify-center">
-        <Image
-          src={Testimonial4}
-          alt="Grupo"
-          width="1280"
-          height="720"
-          loading="lazy"
-          class="rounded-full w-9 h-9"
-        />
-        <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
-          <div>Elena Jimenez</div>
-          <div class="text-sm text-gray-500 dark:text-gray-400">
-            Turista de CDMX
-          </div>
-        </div>
-      </figcaption>
-    </figure>
+      ))
+    }
   </div>
 </section>

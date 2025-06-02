@@ -2,21 +2,26 @@
 export interface Props {
   title: string;
   btn: string;
+  link: any;
 }
-const { title, btn } = Astro.props;
+const {title, link, btn} = Astro.props;
 ---
 
 <section
-  class="py-12 bg-gradient-to-r from-green-500 to-blue-500 text-white text-center"
->
-  <h2 class="text-3xl font-bold mb-4">
+  class="py-12 bg-gradient-to-r from-green-600 via-slate-700 to-indigo-950 text-white text-center">
+  <h2
+    class="text-3xl mb-5 font-semibold tracking-tighter text-center text-white text-pretty pointer-events-none">
     {title}
   </h2>
   <a
-    href="https://chat.whatsapp.com/IqkY61mD5d96iLnbJfOEqA"
-    target="_blank" rel="noopener noreferrer"
-    class="bg-yellow-400 text-black py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-500 hover:text-white transition"
-  >
+    href={link}
+    aria-label="Ir a nuestro canal"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-block px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black hover:text-white font-semibold rounded-md transition-all hover:scale-105 duration-300 relative animate-pulse-ping">
     {btn}
+    <span
+      class="absolute inset-0 rounded-md border-2 border-white animate-ping pointer-events-none"
+    ></span>
   </a>
 </section>
